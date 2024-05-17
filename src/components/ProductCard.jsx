@@ -17,7 +17,6 @@ const ProductCard = ({ product }) => {
 
   const ratingStar = Array.from({ length: 5 }, (elem, index) => {
     let number = index + 0.5;
-    debugger;
     return (
       <span key={index}>
         {rate >= index + 1 ? (
@@ -34,7 +33,13 @@ const ProductCard = ({ product }) => {
   return (
     <div className="bg-[#F7F8F8] rounded-xl shadow border ">
       <div className="p-4 h-[350px]">
-        <Image className="w-full h-full" width={300} height={300} src={image} />
+        <Image
+          className="w-full h-full"
+          width={300}
+          height={300}
+          src={image}
+          alt={title}
+        />
       </div>
       <div className="p-4 space-y-2">
         <h5 className="font-semibold text-xl line-clamp-2" title={title}>

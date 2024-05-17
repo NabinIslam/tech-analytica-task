@@ -34,7 +34,13 @@ const ListProductCard = ({ product }) => {
   return (
     <div className="bg-[#F7F8F8] rounded-xl shadow border flex justify-between items-center h-[300px]">
       <div className="h-full basis-[50%] p-4">
-        <Image className="h-full w-full" width={200} height={180} src={image} />
+        <Image
+          className="h-full w-full"
+          width={200}
+          height={180}
+          src={image}
+          alt={title}
+        />
       </div>
       <div className="p-4 space-y-2 basis-[50%]">
         <h5 className="font-semibold text-xl">{title}</h5>

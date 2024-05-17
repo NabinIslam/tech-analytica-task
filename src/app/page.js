@@ -19,14 +19,11 @@ const Home = () => {
   const {
     data: products = [],
     isLoading,
-    refetch,
   } = useQuery({
     queryKey: ['products'],
     queryFn: () =>
       fetch(`https://fakestoreapi.com/products`).then(res => res.json()),
   });
-
-  console.log(products);
 
   return (
     <main>
