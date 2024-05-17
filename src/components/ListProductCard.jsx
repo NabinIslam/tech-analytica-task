@@ -33,7 +33,7 @@ const ListProductCard = ({ product }) => {
 
   return (
     <div className="bg-[#F7F8F8] rounded-xl shadow border flex justify-between items-center h-[300px]">
-      <div className="h-full basis-[50%] p-4">
+      <div className="h-full basis-[50%] lg:basis-[30%] p-4">
         <Image
           className="h-full w-full"
           width={200}
@@ -42,13 +42,13 @@ const ListProductCard = ({ product }) => {
           alt={title}
         />
       </div>
-      <div className="p-4 space-y-2 basis-[50%]">
-        <h5 className="font-semibold text-xl">{title}</h5>
+      <div className="p-4 space-y-2 basis-[50%] lg:basis-[70%]">
+        <h5 className="font-semibold line-clamp-3 text-xl">{title}</h5>
         <div className="flex items-center gap-1 text-[#F6AA24]">
           {ratingStar}
         </div>
         <h6>({count} Review)</h6>
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col lg:flex-row items-start lg:items-center gap-2 justify-between">
           <h6 className="text-pink-600 font-bold text-xl">${price}</h6>
           <button
             className="bg-black text-white px-3 py-1 rounded-lg"
