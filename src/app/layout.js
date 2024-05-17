@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${inter.className} min-h-screen flex flex-col`}>
         <Toaster
-          position="top-center"
+          position="bottom-center"
           toastOptions={{
             // Define default options
             className: '',
